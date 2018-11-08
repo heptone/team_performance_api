@@ -8,22 +8,28 @@ const PlayerSchema = new Schema({
         required: true
     },
     description: {
-        type: String
+        type: String,
+        defualt: "striker"
     },
     position: {
-        type: String
+        type: String,
+        defualt: "striker"
     },
     shirtNumber: {
-        type: Number
+        type: Number,
+        default: 11
     },
     goalInLife: {
-        type: String
+        type: String,
+        defualt: "Okand"
     },
     yearsPerforming: {
-        type: String
+        type: String,
+        default: "oklart"
     },
     imgRel: {
-        type: String
+        type: String,
+        default: "HeptoneTest.jpg"
     },
     games: {
         type: Number,
