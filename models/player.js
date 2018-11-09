@@ -13,11 +13,15 @@ const PlayerSchema = new Schema({
     },
     position: {
         type: String,
-        defualt: "striker"
+        defualt: "Där det behövs."
     },
     shirtNumber: {
         type: Number,
         default: 11
+    },
+    shirtName: {
+        type: String,
+        default: "Oklart"
     },
     goalInLife: {
         type: String,
