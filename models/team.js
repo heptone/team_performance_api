@@ -8,7 +8,8 @@ const TeamSchema = new Schema({
         required: true
     },
     group: {
-        type: String
+        type: String,
+        default: "none"
     },
     groupGames: {
         type: Number,
