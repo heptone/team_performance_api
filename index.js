@@ -8,7 +8,8 @@ const app = express();
 
 
 // connect to mongodb
-mongoose.connect('mongodb://localhost/teamperformance');
+//mongoose.connect('mongodb://localhost/teamperformance');
+mongoose.connect('mongodb://192.168.0.55/teamperformance');
 mongoose.Promise = global.Promise;
 
 app.use(bodyParser.json());
@@ -27,5 +28,5 @@ app.use(function(err, req, res, next){
 
 // listen for requests.
 app.listen(process.env.port || 4000, function(){
-    console.log('now listening for requests');
+    console.log('now listening for requests', process.env.port);
 });
